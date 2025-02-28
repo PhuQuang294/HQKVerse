@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Coffee Wepsite</title>
+    <!-- Link to css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- box Icon -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      herf="<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>"
+      > -->
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="header bg-dark">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+        <!-- Menu-Icon -->
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <!-- Links -->
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#customers">Customers</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Icon -->
+        <div class="header-icon">
+            <i class='bx bx-cart-alt' id="cart-btn"></i>
+            <i class='bx bx-search' id="search-icon"></i>
+            <i class='bx bxs-user-circle' id="login-btn"></i>
+
+        </div>
+        <!-- Cart -->
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/p1.png" alt="">
+                <div class="content">
+                    <h3>cart item 01</h3>
+                    <div class="price">$15.99</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/p2.png" alt="">
+                <div class="content">
+                    <h3>cart item 02</h3>
+                    <div class="price">$15.99</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/p3.png" alt="">
+                <div class="content">
+                    <h3>cart item 03</h3>
+                    <div class="price">$15.99</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/p4.png" alt="">
+                <div class="content">
+                    <h3>cart item 04</h3>
+                    <div class="price">$15.99</div>
+                </div>
+            </div>
+            <a href="#" class="btn">checkout now</a>
+        </div>
+        <!-- Search Box -->
+        <div class="search-box">
+            <input type="search" name="" id="" placeholder="Search Here...">
+        </div>
+        <!-- Login  -->
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email"placeholder="your email" class="box">
+            <input type="password"placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="#">create now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+    </header>
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Start your day <br> with coffee</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae cum distinctio praesentium consequuntur?
+                Inventore, quos.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+        <div class="home-img">
+            <img src="images/main.png" alt="">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <h2>Our History</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur in doloremque tempora nobis
+                deleniti repellat sequi vel voluptatibus blanditiis earum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur in doloremque tempora nobis
+                deleniti repellat sequi vel voluptatibus blanditiis earum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aperiam hic repellendus! Quas, a?</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+    <!-- Products -->
+    <section class="products" id="products">
+        <div class="heading">
+            <h2>Our popular products</h2>
+        </div>
+        <!-- Container -->
+        <div class="products-container">
+            <div class="box">
+                <img src="images/p1.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/p2.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/p3.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/p4.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/p5.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/p6.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Customer -->
+    <section class="customers" id="customers">
+        <div class="heading">
+            <h2>Our customer's</h2>
+        </div>
+        <!-- Container -->
+        <div class="customers-container">
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ipsa provident corporis nesciunt
+                    ducimus voluptates!</p>
+                <h2>Yasin Arafat</h2>
+                <img src="images/rev1.jpg" alt="">
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ipsa provident corporis nesciunt
+                    ducimus voluptates!</p>
+                <h2>Yasin Arafat</h2>
+                <img src="images/rev2.jpg" alt="">
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ipsa provident corporis nesciunt
+                    ducimus voluptates!</p>
+                <h2>Yasin Arafat</h2>
+                <img src="images/rev3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Contact section starts -->
+    <section class="contact" id="contact">
+        <h1 class="heading"> <span>Contact</span> us </h1>
+        <div class="row">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501726.251541797!2d106.69522764999999!3d10.754792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2zVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1712246598531!5m2!1svi!2s"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form id="contactForm" onsubmit="return validateForm()">
+                <h3>Send information to Shop</h3>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" id="name" placeholder="Name">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="text" id="headline" placeholder="HeadLine">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="text" id="content" placeholder="Content">
+                </div>
+                <input type="submit" value="Submit information" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <!-- JavaScript code -->
+    <script>
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var headline = document.getElementById('headline').value;
+            var content = document.getElementById('content').value;
+            var errorMessage = "";
+
+            if (name.trim() === "") {
+                errorMessage += "Please enter your name.\n";
+            } else if (!/^[^\d]+$/.test(name)) {
+                errorMessage += "Name should not contain numbers.\n";
+            }
+            if (email.trim() === "") {
+                errorMessage += "Please enter your email.\n";
+            } else {
+                // Simple email validation
+                var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(email)) {
+                    errorMessage += "Please enter a valid email address.\n";
+                }
+            }
+            if (headline.trim() === "") {
+                errorMessage += "Please enter headline.\n";
+            }
+            if (content.trim() === "") {
+                errorMessage += "Please enter content.\n";
+            }
+
+            if (errorMessage !== "") {
+                alert(errorMessage);
+                return false; // Prevent form submission
+            }
+            return true; // Allow form submission
+        }
+    </script>
+
+
+    <section class="footer">
+        <div class="footer-box">
+            <h3>Coffee Shop</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, dicta.</p>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-tiktok'></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Support</h3>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Retirn Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Product</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>View Guides</h3>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog Posts</a></li>
+            <li><a href="#">Our Branches</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <div class="contact">
+                <span><i class='bx bx-map'></i>250 New York City, USA1001</span>
+                <span><i class='bx bx-phone'></i>+1 444 744 8444</span>
+                <span><i class='bx bx-envelope'></i>coffee@shop.com</span>
+            </div>
+        </div>
+    </section>
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; CarpoolVenom All Right Reserved</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Link to js -->
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
