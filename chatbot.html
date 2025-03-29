@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Generative Language API với Markdown</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Demo Google Generative Language API</h1>
+    <textarea id="inputText" placeholder="Nhập nội dung để API xử lý..." rows="5"></textarea>
+    <br>
+    <button onclick="fetchGeneratedContent()">Gửi tới API</button>
+    <div id="output">Phản hồi sẽ hiển thị ở đây...</div>
+
+    <script>
+        async function fetchGeneratedContent() {
+            const apiKey = "AIzaSyAw5xwqxLQShLqrdXyzgeF1NredSYNPelY"; // Thay bằng API Key của bạn
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${apiKey}`;
+            const inputText = document.getElementById("inputText").value;
+
+            const payload = {
+                contents: [
+                    {
+                        role: "user",
+                        parts: [
+                            {
+                                text: inputText
+                            }
+                        ]
+                    }
+                ],
+                generationConfig: {
+                    temperature: 1,
+                    topK: 40,
+                    topP: 0.95,
+                    maxOutputTokens: 8192,
+                    responseMimeType: "text/plain"
+                }
+            };
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Lỗi: ${response.status}`);
+                }
+
+                const data = await response.json();
+
+                const markdownContent = data.candidates[0].content.parts[0].text;
+                const htmlContent = marked.parse(markdownContent);
+                document.getElementById("output").innerHTML = htmlContent;
+            } catch (error) {
+                document.getElementById("output").innerText = `Không thể tải dữ liệu. Lỗi: ${error.message}`;
+            }
+        }
+    </script>
+</body>
+</html>
